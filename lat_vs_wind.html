@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization-Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="lat_vs_maxtemp.html">Latitude vs. Max Temperature</a></li>
+              <li><a href="lat_vs_humidity.html">Latitude vs. Humidity</a></li>
+              <li><a href="lat_vs_clouds.html">Latitude vs. Cloudiness</a></li>
+              <li><a href="lat_vs_wind.html">Latitude vs. Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="rawdata.html">Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 pad top"> <br>
+        <h1>Latitude vs. Cloudiness</h1> <br>
+          <div class="pull-left">
+            <img src="Fig4.png" alt="Latitude vs. Cloudiness">
+          </div>
+        </div> 
+        <div class="col-md-4 pad top"> <br>
+          <h3>Observations</h3> <br>
+            <div class="pull-right">
+              <p>Here we see the distribution of latitude vs wind speed. There is no extremely obvious pattern,
+                  but it is worth noting that there seems to be a paucity of high wind weather close to the equator </p>
+            </div>
+        </div> 
+    </div> 
+  </div> 
+
+  </body>
+  </html>

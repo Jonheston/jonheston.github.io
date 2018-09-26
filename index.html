@@ -1,41 +1,79 @@
-<!Doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang = "us-eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization-Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
 
-<h1>Jon's Bio</h1>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="lat_vs_maxtemp.html">Latitude vs. Max Temperature</a></li>
+              <li><a href="lat_vs_humidity.html">Latitude vs. Humidity</a></li>
+              <li><a href="lat_vs_clouds.html">Latitude vs. Cloudiness</a></li>
+              <li><a href="lat_vs_wind.html">Latitude vs. Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="rawdata.html">Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<header>
-    <meta charset="UTF-8">
-    <title>Jon Heston</title>    
-</header>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 pad top"> <br>
+          <h3>Summary: Global Weather Plots</h3> <br>
+        </div>
+        <div class="col-md-6 pad top"> <br>
+          <h3>Visualizations</h3> <br>
+        </div>
+      </div>
+    <div class="row">
+        <div class="col-md-6 pad top"> <br>
+          <div class="pull-left">
+            <img src="Fig1.png" alt="City Latitude vs Max Temp (F)" width= "50%" height="50%">
+          </div>
+          <div class="text-left">
+            <p> The purpose of this project was to analyze how weather changes as you get closer to the
+                equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap
+                API to assemble a dataset of over 500 cities. </p>
+            <p> After assembling the dataset, Matplotlib was used to plot various aspects of weather
+                vs. latitude. Factors analyzed included: temperature, cloudiness, wind-speed and humidity. </p>
+            <p> Additionally, Matplotlib was used to plot aspects of the weather using longitude
+                vs. latitude. The intent was to visualize a world map using weather plots. This site
+                provides the source data and visualizations created as part of the analysis,
+                as well as explanations and descriptions of any trends and correlations witnessed. </p>
+          </div>
+        </div>
+        <div class="col-md-3 pad top"> <br>
+          <div class="pull-right">
+            <a href="lat_vs_maxtemp.html"><img src="Fig1.png" alt="City Latitude vs Max Temp (F)" width="100%" height="100%"></a>
+            <a href="lat_vs_clouds.html"><img src="Fig3.png" alt="City Latitude vs Cloudiness" width="100%" height="100%"></a>
+          </div>
+       </div>
+       <div class="col-md-3 pad top"> <br>
+        <div class="pull-left">
+            <a href="lat_vs_humidity.html"><img src="Fig2.png" alt="City Latitude vs Humidity (%)" width="100%" height="100%"></a>
+            <a href="lat_vs_wind.html"><img src="Fig4.png" alt="Latitude vs. Windspeed (mph)" width="100%" height="100%"></a>
+        </div>
 
-<img width="200" src="Jon_Heston.jpg" alt="Jon's wedding">
+      </div>
 
+  </div>
 
-<p>&nbsp &nbsp &nbsp &nbsp I am a post-doctoral researcher at UCSD studying the neural mechanisms of stopping<br>
-I also study Data science <br>
-I like Frogs</p>
-<ul>
-    <li><strong>Email:</strong> <a href="#">jonheston@gmail.com</a></li>
-    <li><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/jon-heston-2a804b26</a></li>
-    <li><strong>Lab Website: </strong> <a href="#">https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx</a></li>
-</ul>
-
-<table>
-    <tr>
-        <th>Books</th>
-        <th>Movies</th>
-        <th>Music</th>
-    </tr>
-    <tr>
-        <td>Blood Meridian</td>
-        <td>Hot Fuzz</td>
-        <td>Young Widows</td>
-    </tr>
-    <tr>
-            <td>Slaughter House 5</td>
-            <td>Big Lebowski</td>
-            <td>TV on the Radio</td>
-        </tr>
-</table>
-
+  </body>
+  
+  </html>
